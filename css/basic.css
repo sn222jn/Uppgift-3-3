@@ -20,7 +20,8 @@ body {
 /* Container
 -------------------------------*/
 #container {
-    height: auto;
+    position: relative;
+    height: 690px;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -28,61 +29,80 @@ body {
     background-color: #eae7d2;
     font-family: Verdana, sans-serif;
 }
+h1 {
+    font-size: 2.3em;
+}
 h1, h2 {
     font-family: Times New Roman, serif;
+    font-weight: normal;
 }
+#subcontent h1 {
+    font-size: 1.6em;
+}
+
 /* Header
 ------------------------------*/
 #topbar {
-    height: 250px;
+    height: 255px;
     width: 600px;
     margin: 0;
     background: url("pics/coffey.jpg") no-repeat;
-    background-position: 0 40%;
+    background-position: 0 35%;
     color: #dce7d2;
     text-align: right;
     font-style: italic;
+    font-size: .8em;
     background-color: #51473d;
-    z-index: 40;
+
 }
 
 /* Menu
 --------------------------------------*/
+#menu {
+    margin: -47px 0 0 -25px;
+    
+}
 #menu a {
     display: none;
 }
 #menu ul li{
-    margin: 0;
-    padding: 0;
     list-style-type: none;
-    overflow: hidden;
-
-
+    overflow: hidden;    
+    margin-right: 1px;
+    margin-left: 1px;
+    
 }
 #menu ul li a {
-    display: block;
+    display: inline-block;
     color: #dce7d2;
     font-family: Verdana, sans-serif;
-    
+
 }
 #menu li {
     float: left;
 }
 #menu li a:link, #menu li a:visited {
-
     width: auto;
     padding: 5px 15px 5px 15px;
-    background-color:#797066;
-    text-align:center;
-    text-decoration:none;
+    background-color: #797066;
+    text-align: center;
+    text-decoration: none;
     text-transform: capitalize;
 }
-#menu li a:hover, #menu li a:active {
+#menu li a:focus {
+    background-color: #eae7d2;
+    color: #797066;
+}
+#menu li a:hover {
     background-color:#9c9084;
 }
-.active {
-	background-color: #eae7d2;
+#menu li a:active {
+    background-color: #eae7d2;
+    color: #797066;
+    z-index: 2;
 }
+
+
 /* Textarea
 --------------------------*/
 #content {
@@ -100,14 +120,10 @@ h1, h2 {
 	width: 35%;
 	font-size: .7em;
 	float: right;
-	margin-top: 25px;
+	margin-top: 20px;
 	padding: 0 0 0 15px;
 	border-left: 2px dashed #c0c0c0;
 }
-#subcontent h1 {
-    font-size: 1.6em;
-}
-
 
 /* Image in textarea
 --------------------------*/
@@ -116,6 +132,7 @@ h1, h2 {
 	float: left;
 	padding: 0 5px 5px 5px;
 }
+
 /* Footer
 ---------------------------*/
 #bottomcontent {
@@ -123,11 +140,17 @@ h1, h2 {
 	font-size: .8em;
 	font-style: italic;
 	float: left;
-	
 }
+
 /* Links
 ------------------------------*/
-li a {
-	color: #797066;
-	font-family: Times New Roman, serif;
+#subcontent ul li {
+	font-family: Verdana, sans-serif;
+	list-style-type: none;
+	font-size: 1.2em;
+	margin-left: -40px;
+
 }
+#subcontent ul li a {
+    color: #797066;
+    
