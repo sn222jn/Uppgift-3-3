@@ -1,1 +1,108 @@
-/* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+/* Colors
+--------------------------
+menu 797066
+menu hover 9c9084
+menu selected eae7d2
+menu font dce7d2
+menu selected font 797066
+font 797066
+dashed column separator c0c0c0
+topbar background-color 51473d
+body background-color fcfaf4
+content border cecab9
+content background color eae7d2
+
+--------------------------*/
+body {
+    background-color: #fcfaf4;
+    z-index: 100;
+}
+/* Container
+-------------------------------*/
+#container {
+    height: auto;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #cecab9;
+    background-color: #eae7d2;
+
+}
+/* Header
+------------------------------*/
+#topbar {
+    height: 250px;
+    width: 600px;
+    margin: 0;
+    background: url("pics/coffey.jpg") no-repeat;
+    background-position: 0 40%;
+    color: #dce7d2;
+    text-align: right;
+    font-style: italic;
+    background-color: #51473d;
+    z-index: 40;
+}
+
+/* Menu
+--------------------------------------*/
+#menu ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    display: inline;
+}
+#menu ul li a {
+    display: block;
+    color: #dce7d2;
+}
+#menu li a:link, #menu li a:visited
+{
+display:block;
+width:120px;
+font-weight:bold;
+background-color:#797066;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+#menu li a:hover {
+background-color:#9c9084;
+}
+
+/* Textarea
+--------------------------*/
+#content {
+	color: #797066;
+	padding: .5em;
+}
+#maincontent {
+	height: auto;
+	width: 60%;
+}
+#subcontent {
+	height: auto;
+	width: 40%;
+
+}
+
+
+/* Image in textarea
+--------------------------*/
+#maincontent img {
+	position: relative;
+	float: left;
+	padding: 0 5px 5px 5px;
+}
+/* Footer
+---------------------------*/
+#bottomcontent {
+	width: auto;
+	
+}
+/* Links
+------------------------------*/
+li a {
+	color: #797066;
+}
