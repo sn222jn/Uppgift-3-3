@@ -99,7 +99,10 @@ h1, h2 {
 #menu li a:active {
     background-color: #eae7d2;
     color: #797066;
-    z-index: 2;
+}
+.active {
+    background-color: #eae7d2;
+    color: #797066;
 }
 
 
