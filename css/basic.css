@@ -21,7 +21,7 @@ body {
 -------------------------------*/
 #container {
     position: relative;
-    height: 690px;
+    height: 640px;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +30,7 @@ body {
     font-family: Verdana, sans-serif;
 }
 h1 {
-    font-size: 2.3em;
+    font-size: 2.5em;
 }
 h1, h2 {
     font-family: Times New Roman, serif;
@@ -115,17 +115,24 @@ h1, h2 {
 #maincontent {
 	height: auto;
 	width: 60%;
-	font-size: .9em;
+	font-size: .8em;
 	float: left;
 }
 #subcontent {
 	height: auto;
 	width: 35%;
-	font-size: .7em;
+	font-size: .6em;
 	float: right;
-	margin-top: 20px;
-	padding: 0 0 0 15px;
-	border-left: 2px dashed #c0c0c0;
+	margin-top: 25px;
+	padding: 0 5px 15px 15px;
+	border-left: 1px dashed #c0c0c0;
+
+}
+#maincontent p {
+    line-height: 150%;
+}
+#subcontent p {
+    line-height: 200%;
 }
 
 /* Image in textarea
@@ -140,7 +147,7 @@ h1, h2 {
 ---------------------------*/
 #bottomcontent {
 	width: 60%;
-	font-size: .8em;
+	font-size: .6em;
 	font-style: italic;
 	float: left;
 }
@@ -156,4 +163,5 @@ h1, h2 {
 }
 #subcontent ul li a {
     color: #797066;
-    
+    font-weight: bold;
+}    
